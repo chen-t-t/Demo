@@ -8,10 +8,7 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 import java.util.List;
 
 public class FriendDialog extends JFrame {
@@ -19,7 +16,7 @@ public class FriendDialog extends JFrame {
     private final static int height = 700;
     private Client client;
     private JTree jTree;
-
+    private TrayIcon trayIcon;
     private DefaultListModel<String> defaultListModel = null;
     private JList<String > friendJList = null;
     private JScrollPane jScrollPane = null;
@@ -65,6 +62,7 @@ public class FriendDialog extends JFrame {
                 }
             }
         });
+
     }
 
     public void getFriendList()
@@ -106,7 +104,14 @@ public class FriendDialog extends JFrame {
                 getClient().SendMsg(clientExitMsg);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+                setVisible(false);
+                setTray();
+            }
         });
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
         this.setLocation((int)((d.width / 2 - width / 2)*1.8), (int)((d.height / 2 - height / 2)*0.5));
@@ -114,6 +119,45 @@ public class FriendDialog extends JFrame {
         this.setVisible(true);
     }
 
+    private void setTray()
+    {
+        System.out.println("tuopan");
+        /** 是否支持 托盘显示 */
+        if(SystemTray.isSupported())
+        {
+            SystemTray tray = SystemTray.getSystemTray();
+            Image image = Toolkit.getDefaultToolkit().createImage("D:\\Java-Project\\Demo01\\Img\\Img\\top.gif");
+
+            String text = "chat";
+
+            PopupMenu popupMenu = new PopupMenu();
+            MenuItem menuItem = new MenuItem("open");
+            menuItem.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    tray.remove(trayIcon);
+                    setVisible(true);
+                }
+            });
+            popupMenu.add(menuItem);
+            trayIcon = new TrayIcon(image,text,popupMenu);
+            trayIcon.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    if(e.getClickCount() == 2)
+                    {
+                        tray.remove(trayIcon);
+                        setVisible(true);
+                    }
+                }
+            });
+            try {
+                tray.add(trayIcon);
+            } catch (AWTException e) {
+                e.printStackTrace();
+            }
+        }
+    }
     public Client getClient() {
         return client;
     }

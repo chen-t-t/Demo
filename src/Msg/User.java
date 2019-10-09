@@ -39,6 +39,7 @@ public class User extends BaseMsg {
             flagMsg.setFlag(true);
             Server server = Server.getServer();
             server.getLoginedlist().add(getUsername());
+            server.getClientHashMap().put(getUsername(),getClient());
         }
         Server.getServer().SendMsgTo(socket,flagMsg);
     }

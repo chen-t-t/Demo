@@ -10,6 +10,16 @@ public class ClientMsg extends BaseMsg {
     private String say;
     private String data;
     private File file;
+    private String dstname = null;
+
+    public String getDstname() {
+        return dstname;
+    }
+
+    public void setDstname(String dstname) {
+        this.dstname = dstname;
+    }
+
     public String getData() {
         return data;
     }
@@ -44,14 +54,22 @@ public class ClientMsg extends BaseMsg {
 
     @Override
     public void doSeverthing(CloseFlag flag) {
-        SeverMsg severMsg = new SeverMsg();
+        if(dstname == null || "".equals(dstname))
+        {
+            SeverMsg severMsg = new SeverMsg();
 
-        severMsg.setName(getName());
-        severMsg.setSay(getSay());
-        severMsg.setDate(getData());
-        System.out.println(file.getName());
-        Server server = Server.getServer();
-        server.SendMsg(severMsg);
+            severMsg.setName(getName());
+            severMsg.setSay(getSay());
+            severMsg.setDate(getData());
+            System.out.println(file.getName());
+            Server server = Server.getServer();
+
+            server.SendMsg(severMsg);
+        }
+        else
+        {
+            Server.getServer().findUserOnline(dstname,this);
+        }
     }
 
     @Override

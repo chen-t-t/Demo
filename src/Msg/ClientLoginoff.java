@@ -9,7 +9,7 @@ public class ClientLoginoff extends BaseMsg {
     public void doSeverthing(CloseFlag flag) {
         Server.getServer().getList().remove(getSocket());
         Server.getServer().getLoginedlist().remove(clientname);
-
+        Server.getServer().getClientHashMap().remove(getClientname());
         SeverLoginoffMsg severLoginoffMsg = new SeverLoginoffMsg();
         severLoginoffMsg.setClientname(getClientname());
         Server server = Server.getServer();

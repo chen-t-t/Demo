@@ -1,16 +1,17 @@
 package NetWork;
 
+import Dao.BaseDao;
+import Dao.OfflineMsg;
 import Dao.UserDao;
-import Msg.CloseFlag;
-import Msg.SeverHeartMsg;
-import Msg.User;
-import Msg.BaseMsg;
+import Entity.OfflineMsgEntity;
+import Msg.*;
 
 import java.io.*;
 import java.net.*;
 import java.nio.file.Files;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class Server {
     private UserDao userDao;
@@ -19,12 +20,29 @@ public class Server {
     private List<Socket> list = new ArrayList<>();
     private ArrayList<String> loginedlist = new ArrayList<>();
     private Map<String, Socket> userList = new HashMap<>();
+    private Map<String,Client> clientHashMap = new HashMap<>();
     private boolean flag;
-    
+    private Queue<BaseMsg> MsgQueue = new ArrayBlockingQueue<BaseMsg>(512);
     private int port = 8092;
     private int udpport = 8094;
     private DatagramSocket datagramSocket = null;
     private HashSet<Socket> heartlist = new HashSet<>();
+
+    public Queue<BaseMsg> getMsgQueue() {
+        return MsgQueue;
+    }
+
+    public void setMsgQueue(Queue<BaseMsg> msgQueue) {
+        MsgQueue = msgQueue;
+    }
+
+    public Map<String, Client> getClientHashMap() {
+        return clientHashMap;
+    }
+
+    public void setClientHashMap(Map<String, Client> clientHashMap) {
+        this.clientHashMap = clientHashMap;
+    }
 
     public HashSet<Socket> getHeartlist() {
         return heartlist;
@@ -261,6 +279,7 @@ public class Server {
                         System.out.println("服务器收到" + msg);
                         msg.setSocket(clientsocket);
                         msg.doSeverthing(flag);
+
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
@@ -300,26 +319,44 @@ public class Server {
         return this.getLoginedlist().size();
     }
 
-    public void findUserOnline(String user)
+    private SeverMsg getSeverMsg(BaseMsg baseMsg)
+    {
+        SeverMsg msg = new SeverMsg();
+        ClientMsg clientMsg = (ClientMsg) baseMsg;
+        msg.setName(clientMsg.getName());
+        msg.setDate(clientMsg.getData());
+        msg.setSay(clientMsg.getSay());
+        return msg;
+    }
+
+    public void findUserOnline(String user,BaseMsg baseMsg)
     {
         if(loginedlist != null && loginedlist.size() > 0)
         {
             if(loginedlist.contains(user))
             {
-
+                Client c = getClientHashMap().get(user);
+                if(c != null) {
+                    SeverMsg msg = getSeverMsg(baseMsg);
+                    SendMsgTo(c.getSocket(), msg);
+                }
+                else
+                {
+                    System.out.println("用户不在线");
+                }
             }
             else{
-
+                //MsgQueue.add(baseMsg);
+                ClientMsg clientMsg = (ClientMsg)baseMsg;
+                OfflineMsgEntity offlineMsgEntity = new OfflineMsgEntity();
+                offlineMsgEntity.setSay(clientMsg.getSay());
+                offlineMsgEntity.setSrc_Name(clientMsg.getName());
+                offlineMsgEntity.setDst_Name(clientMsg.getDstname());
+                OfflineMsg offlineMsg = new OfflineMsg();
+                offlineMsg.InsertMsg(offlineMsgEntity);
             }
         }
     }
-/*
-    public static void main(String[] args) {
-        Server server = Server.getServer();
-        System.out.println("服务器启动");
-        server.StartListen();
-    }
-*/
 
 }
 

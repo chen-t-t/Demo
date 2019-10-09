@@ -81,6 +81,7 @@ public class LoginDialog extends JFrame {
                     getClient().Connect();
                     User user = new User(jname,jpassword);
                     user.setClientname(jname);
+
                     getClient().setName(jname);
                     getClient().ReciveMsg();
                     getClient().SendMsg(user);
@@ -112,6 +113,7 @@ public class LoginDialog extends JFrame {
                 getClient().Connect();
                 User user = new User(jname,jpassword);
                 user.setClientname(jname);
+
                 getClient().setName(jname);
                 getClient().ReciveMsg();
                 getClient().SendMsg(user);
