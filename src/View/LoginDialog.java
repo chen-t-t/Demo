@@ -8,6 +8,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * 登录界面
+ */
 public class LoginDialog extends JFrame {
     private static String localpath;
     private final static int width = 430;
@@ -42,15 +45,7 @@ public class LoginDialog extends JFrame {
         JLabel jLabelIcon = new JLabel(imageIcon);
         jLabelIcon.setBounds(175, 45, 70, 70);
         jPanel.add(jLabelIcon);
-/*      this.getContentPane().setLayout(null);
 
-        ImageIcon imageIcon = new ImageIcon("Img/back.jpg");
-        JLabel jLabelpic = new JLabel(imageIcon);
-        jLabelpic.setBounds(0,0,430,330);
-        this.getLayeredPane().add(jLabelpic,Integer.MAX_VALUE);
-        this.getLayeredPane().setLayout(null);
-        JPanel j = (JPanel)this.getContentPane();
-        j.setOpaque(false);*/
 
         JLabel jLabel01 = new JLabel("昵称:");
         jLabel01.setBounds(70, 140, 30, 20);
@@ -113,7 +108,6 @@ public class LoginDialog extends JFrame {
                 getClient().Connect();
                 User user = new User(jname,jpassword);
                 user.setClientname(jname);
-
                 getClient().setName(jname);
                 getClient().ReciveMsg();
                 getClient().SendMsg(user);
@@ -133,6 +127,17 @@ public class LoginDialog extends JFrame {
         jButton.setBorderPainted(false);
         jButton.setBounds(5, 250, 80, 30);
         jButton.setFont(new Font("宋体", Font.PLAIN, 11));
+        jButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                jButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                jButton.setCursor(Cursor.getDefaultCursor());
+            }
+        });
         jButton.addActionListener(e -> {
             if (e.getSource() == jButton) {
                 localpath = "www.baidu.com";
@@ -143,7 +148,17 @@ public class LoginDialog extends JFrame {
                 }
             }
         });
+        jsubmit.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                jsubmit.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+            }
 
+            @Override
+            public void mouseExited(MouseEvent e) {
+                jsubmit.setCursor(Cursor.getDefaultCursor());
+            }
+        });
         jPanel.setLayout(null);
         jPanel.add(jnumber);
         jPanel.add(jPasswordField);
@@ -161,6 +176,7 @@ public class LoginDialog extends JFrame {
         this.setSize(width, height);
         this.setVisible(true);
     }
+
     public void loginfail()
     {
         JOptionPane.showMessageDialog(null, "登陆失败", "错误", JOptionPane.ERROR_MESSAGE);

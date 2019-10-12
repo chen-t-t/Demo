@@ -5,12 +5,14 @@ import Msg.ClientGetFrinedsMsg;
 import Msg.ClientLoginoff;
 import NetWork.Client;
 import javax.swing.*;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.List;
 
+/**
+ * Friend dialog
+ * 显示好友列表
+ */
 public class FriendDialog extends JFrame {
     private final static int width = 300;
     private final static int height = 700;
@@ -20,6 +22,7 @@ public class FriendDialog extends JFrame {
     private DefaultListModel<String> defaultListModel = null;
     private JList<String > friendJList = null;
     private JScrollPane jScrollPane = null;
+
     private JPanel jPanel = new JPanel(){
         @Override
         protected void paintComponent(Graphics g) {
@@ -27,6 +30,7 @@ public class FriendDialog extends JFrame {
             g.drawImage(image,0,0,width,height,this);
         }
     };
+
     public void flushFriendlist(List<String> list, String name) {
         System.out.println(list);
         if(name == null) {

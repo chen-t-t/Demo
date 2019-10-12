@@ -12,7 +12,7 @@ import javax.swing.*;
 import java.io.*;
 import java.net.DatagramSocket;
 import java.net.Socket;
-import java.net.SocketException;
+
 
 
 public class Client {
@@ -42,7 +42,7 @@ public class Client {
         try {
             socket = new Socket("localhost",8092);
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "网络错误", "错误", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "网络错误或者服务器错误", "错误", JOptionPane.ERROR_MESSAGE);
             System.out.println("客户端连接失败");
             setFlag(false);
         }
