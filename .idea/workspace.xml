@@ -6,11 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f14f36bc-b04b-418b-bab4-002581a075c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Img/Img/One_Piece.ico" afterDir="false" />
+    <list default="true" id="f14f36bc-b04b-418b-bab4-002581a075c3" name="Default Changelist" comment="新增窗口最小化和单人消息缓存本地">
+      <change afterPath="$PROJECT_DIR$/src/View/BaseFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Demo01_jar/Demo01.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Demo01_jar/Demo01.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/Msg/ClientLoginMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/Msg/ClientLoginMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/Msg/ClientLoginoff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/Msg/ClientLoginoff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/Msg/SeverMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/Msg/SeverMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/Msg/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/Msg/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/NetWork/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/NetWork/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/NetWork/Server$HeartThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/NetWork/Server$HeartThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/NetWork/Server$SocketThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/NetWork/Server$SocketThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/NetWork/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/NetWork/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/FriendDialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/FriendDialog$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/FriendDialog$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/FriendDialog$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/FriendDialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/FriendDialog$3.class" afterDir="false" />
@@ -20,10 +27,21 @@
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/LoginDialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/LoginDialog$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/LoginDialog$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/LoginDialog$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/LoginDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/LoginDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/configure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Demo01/View/SingleFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Msg/ClientLoginMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Msg/ClientLoginMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Msg/ClientLoginoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Msg/ClientLoginoff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Msg/SeverMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Msg/SeverMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Msg/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Msg/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NetWork/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetWork/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetWork/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetWork/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/FriendDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/FriendDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/LoginDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/SingleFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SingleFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ViewFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +69,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NetWork/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1833">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="-617">
+              <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2098#2099#0" expanded="true" />
+                <element signature="e#2132#2133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/SingleFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/ViewFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,13 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/swing/ImageIcon.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/awt/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6825">
-              <caret line="216" selection-start-line="216" selection-end-line="216" />
-              <folding>
-                <element signature="e#6758#6759#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17784">
+              <caret line="495" column="19" selection-start-line="495" selection-start-column="19" selection-end-line="495" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -78,13 +121,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/FriendDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5460">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="429">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
-                <element signature="e#5452#5453#0" expanded="true" />
-                <element signature="e#5481#5482#0" expanded="true" />
-                <element signature="e#5525#5526#0" expanded="true" />
-                <element signature="e#5561#5562#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6012#6013#0" expanded="true" />
+                <element signature="e#6041#6042#0" expanded="true" />
+                <element signature="e#6085#6086#0" expanded="true" />
+                <element signature="e#6121#6122#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,10 +137,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/LoginDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="507">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/BaseFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#132#133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Msg/ClientMsg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Msg/ClientLoginoff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Msg/SeverMsg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+              <folding>
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Msg/SeverExitMsg.java" />
         <option value="$PROJECT_DIR$/src/NetWork/TestClient.java" />
         <option value="$PROJECT_DIR$/src/Msg/BaseMsg.java" />
         <option value="$PROJECT_DIR$/src/Msg/FlagMsg.java" />
@@ -136,7 +231,6 @@
         <option value="$PROJECT_DIR$/Img/configure/configure" />
         <option value="$PROJECT_DIR$/configure.properties" />
         <option value="$PROJECT_DIR$/src/GameDemo/NetWork/GameServer.java" />
-        <option value="$PROJECT_DIR$/src/Msg/SeverMsg.java" />
         <option value="$PROJECT_DIR$/Img/configure/configure.properties" />
         <option value="$PROJECT_DIR$/src/Dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/Msg/SeverHeartMsg.java" />
@@ -151,10 +245,8 @@
         <option value="$PROJECT_DIR$/src/Msg/ClientFileSendMsg.java" />
         <option value="$PROJECT_DIR$/src/View/MyFrame.java" />
         <option value="$PROJECT_DIR$/src/Handle/MyMouseHandle.java" />
-        <option value="$PROJECT_DIR$/src/View/ViewFrame.java" />
         <option value="$PROJECT_DIR$/src/View/singleFrame.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/View/SingleFrame.java" />
         <option value="$PROJECT_DIR$/src/Msg/SeverloginMsg.java" />
         <option value="$PROJECT_DIR$/src/NetWork/Client01.java" />
         <option value="$PROJECT_DIR$/src/Msg/SeverLoginoffMsg.java" />
@@ -162,19 +254,23 @@
         <option value="$PROJECT_DIR$/src/View/FriendPanel.java" />
         <option value="$PROJECT_DIR$/src/Msg/SeverSendFriendsMsg.java" />
         <option value="$PROJECT_DIR$/src/Msg/ClientGetFrinedsMsg.java" />
-        <option value="$PROJECT_DIR$/src/Msg/ClientLoginoff.java" />
         <option value="$PROJECT_DIR$/src/Msg/ClientToMsg.java" />
-        <option value="$PROJECT_DIR$/src/Msg/ClientMsg.java" />
-        <option value="$PROJECT_DIR$/src/Msg/ClientLoginMsg.java" />
-        <option value="$PROJECT_DIR$/src/Msg/User.java" />
         <option value="$PROJECT_DIR$/src/Dao/OfflineUserInfo.java" />
         <option value="$PROJECT_DIR$/src/Entity/OfflineMsgEntity.java" />
         <option value="$PROJECT_DIR$/src/Dao/IOfflineMsg.java" />
         <option value="$PROJECT_DIR$/src/Dao/OfflineMsg.java" />
+        <option value="$PROJECT_DIR$/src/Msg/ClientLoginMsg.java" />
+        <option value="$PROJECT_DIR$/src/Msg/User.java" />
         <option value="$PROJECT_DIR$/src/NetWork/Server.java" />
+        <option value="$PROJECT_DIR$/src/Msg/SeverMsg.java" />
+        <option value="$PROJECT_DIR$/src/NetWork/Client.java" />
+        <option value="$PROJECT_DIR$/src/Msg/ClientLoginoff.java" />
+        <option value="$PROJECT_DIR$/src/Msg/ClientMsg.java" />
+        <option value="$PROJECT_DIR$/src/View/BaseFrame.java" />
         <option value="$PROJECT_DIR$/src/View/FriendDialog.java" />
         <option value="$PROJECT_DIR$/src/View/LoginDialog.java" />
-        <option value="$PROJECT_DIR$/src/NetWork/Client.java" />
+        <option value="$PROJECT_DIR$/src/View/SingleFrame.java" />
+        <option value="$PROJECT_DIR$/src/View/ViewFrame.java" />
       </list>
     </option>
   </component>
@@ -190,7 +286,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,18 +302,13 @@
               <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
               <item name="Demo01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="NetWork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ReadUtils" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -299,8 +389,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
@@ -339,7 +429,10 @@
       <workItem from="1570609395549" duration="11961000" />
       <workItem from="1570625873805" duration="217000" />
       <workItem from="1570760592933" duration="1655000" />
-      <workItem from="1570859293334" duration="426000" />
+      <workItem from="1570859293334" duration="1179000" />
+      <workItem from="1570962462355" duration="626000" />
+      <workItem from="1571017551907" duration="824000" />
+      <workItem from="1571049366621" duration="5590000" />
     </task>
     <task id="LOCAL-00001" summary="新增窗口最小化和单人消息缓存本地">
       <created>1570626025768</created>
@@ -348,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570626025769</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增窗口最小化和单人消息缓存本地">
+      <created>1570859850639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570859850639</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -384,12 +484,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236981000" />
+    <option name="totallyTimeSpent" value="244774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,7 +499,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.28633407" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.28633407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,24 +529,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="新增窗口最小化和单人消息缓存本地" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Msg/SeverExitMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/swing/JLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="221" column="13" selection-start-line="221" selection-start-column="13" selection-end-line="221" selection-end-column="13" />
-          <folding>
-            <element signature="e#7455#7456#0" expanded="true" />
-            <element signature="e#7494#7495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -467,13 +550,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -549,35 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/SeverLoginoffMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/BaseMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/SeverMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Msg/ClientToMsg.java" />
     <entry file="file://$PROJECT_DIR$/src/Dao/OfflineUserInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/Dao/BaseDao.java">
@@ -638,33 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/ClientMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/ClientLoginoff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/ClientLoginMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Msg/SeverSendFileMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
@@ -693,40 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NetWork/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4173">
-          <caret line="154" column="74" selection-start-line="154" selection-start-column="74" selection-end-line="154" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/SingleFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4446">
-          <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7137">
-          <caret line="204" column="63" selection-start-line="199" selection-start-column="15" selection-end-line="204" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Msg/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -766,6 +752,13 @@
     <entry file="file://$PROJECT_DIR$/Img/Img/top.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/swing/ImageIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6825">
@@ -776,33 +769,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/LoginDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/Msg/ClientLoginMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Msg/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Msg/BaseMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetWork/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="276" column="44" selection-start-line="276" selection-start-column="44" selection-end-line="276" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Msg/SeverLoginoffMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Msg/ClientLoginoff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/FriendDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/Msg/ClientMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5460">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="218">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
-            <element signature="e#5452#5453#0" expanded="true" />
-            <element signature="e#5481#5482#0" expanded="true" />
-            <element signature="e#5525#5526#0" expanded="true" />
-            <element signature="e#5561#5562#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NetWork/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1833">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="-617">
+          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2132#2133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Msg/SeverMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/awt/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17784">
+          <caret line="495" column="19" selection-start-line="495" selection-start-column="19" selection-end-line="495" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/BaseFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/FriendDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6012#6013#0" expanded="true" />
+            <element signature="e#6041#6042#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6121#6122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/LoginDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/SingleFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ViewFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -5,6 +5,8 @@ import Msg.ClientGetFrinedsMsg;
 import Msg.ClientLoginoff;
 import NetWork.Client;
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.List;
@@ -13,15 +15,21 @@ import java.util.List;
  * Friend dialog
  * 显示好友列表
  */
-public class FriendDialog extends JFrame {
+public class FriendDialog extends BaseFrame {
     private final static int width = 300;
     private final static int height = 700;
+    /** 客户端 */
     private Client client;
-    private JTree jTree;
+    /** 托盘 */
     private TrayIcon trayIcon;
+    /** 好友列表 */
     private DefaultListModel<String> defaultListModel = null;
-    private JList<String > friendJList = null;
+    private JList<String> friendJList = null;
     private JScrollPane jScrollPane = null;
+
+    /** 选择名称 */
+    private String selectname = null;
+
 
     private JPanel jPanel = new JPanel(){
         @Override
@@ -32,7 +40,6 @@ public class FriendDialog extends JFrame {
     };
 
     public void flushFriendlist(List<String> list, String name) {
-        System.out.println(list);
         if(name == null) {
             System.out.println(list);
             if (list != null && list.size() > 0) {
@@ -54,15 +61,25 @@ public class FriendDialog extends JFrame {
         }
     }
 
-
     private void addEvent()
     {
+        friendJList.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                selectname = friendJList.getSelectedValue();
+            }
+        });
         friendJList.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if(e.getClickCount() == 2)
                 {
-                    SingleFrame singleFrame = new SingleFrame(getClient());
+                    if(selectname != null) {
+                        SingleFrame singleFrame = new SingleFrame(getClient(),selectname);
+                    }
+                    else{
+                        System.out.println("双击失败");
+                    }
                 }
             }
         });

@@ -1,8 +1,6 @@
 package View;
 
 import Handle.MyKeyHandle;
-import Msg.ClientExitMsg;
-import Msg.ClientLoginoff;
 import Msg.ClientMsg;
 import NetWork.Client;
 import Util.FileUtil;
@@ -16,7 +14,7 @@ import java.io.File;
 import java.text.DateFormat;
 import java.util.Date;
 
-public class SingleFrame extends JFrame {
+public class SingleFrame extends BaseFrame {
     private JPanel jPanel = null;
     private Dimension dimension = null;
     private int width = 600;
@@ -32,6 +30,11 @@ public class SingleFrame extends JFrame {
     private DateFormat dateFormat = null;
     private Client client = null;
     private File file;
+
+    @Override
+    public void setTitle(String title) {
+        super.setTitle(title);
+    }
 
     private JPanel jPanelback = new JPanel(){
         @Override
@@ -49,9 +52,12 @@ public class SingleFrame extends JFrame {
         this.client = client;
     }
 
-    public SingleFrame(Client client) {
+    public SingleFrame(Client client,String dstname) {
         super();
         this.client = client;
+        client.setSingleFrame(this);
+
+        this.setTitle(dstname);
         jPanelback.setLayout(null);
         dateFormat = DateFormat.getDateTimeInstance();
 
@@ -147,6 +153,10 @@ public class SingleFrame extends JFrame {
                 else{
                     ClientMsg b = new ClientMsg();
                     b.setName(getClient().getName());
+                    if(dstname != null)
+                    {
+                        b.setDstname(dstname);
+                    }
                     b.setData(dateFormat.format(new Date()));
                     b.setSay(str);
                     getClient().SendMsg(b);
@@ -166,6 +176,10 @@ public class SingleFrame extends JFrame {
                     String str = jTextArea02.getText();
                     ClientMsg b = new ClientMsg();
                     b.setName(getClient().getName());
+                    if(dstname!=null)
+                    {
+                        b.setDstname(dstname);
+                    }
                     b.setData(dateFormat.format(new Date()));
                     b.setSay(str);
                     getClient().SendMsg(b);
@@ -191,7 +205,7 @@ public class SingleFrame extends JFrame {
         dimension = Toolkit.getDefaultToolkit().getScreenSize();
 
         setSize(width, height);
-        setTitle("聊天");
+
         setLocation(dimension.width / 2 - width / 2, dimension.height / 2 - height / 2);
         setVisible(true);
     }

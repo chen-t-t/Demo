@@ -11,6 +11,7 @@ public class ClientLoginoff extends BaseMsg {
         Server.getServer().getLoginedlist().remove(clientname);
         Server.getServer().getClientHashMap().remove(getClientname());
         SeverLoginoffMsg severLoginoffMsg = new SeverLoginoffMsg();
+        severLoginoffMsg.setClient(getClient());
         severLoginoffMsg.setClientname(getClientname());
         Server server = Server.getServer();
         List<String> list = server.getLoginedlist();

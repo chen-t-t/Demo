@@ -11,7 +11,7 @@ import java.awt.event.*;
 /**
  * 登录界面
  */
-public class LoginDialog extends JFrame {
+public class LoginDialog extends BaseFrame {
     private static String localpath;
     private final static int width = 430;
     private final static int height = 330;
@@ -167,8 +167,7 @@ public class LoginDialog extends JFrame {
 
         this.add(jPanel);
         //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ImageIcon image = new ImageIcon(getClass().getResource("/Img/top.gif"));
-        this.setIconImage(image.getImage());
+
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
 
         this.setResizable(false);

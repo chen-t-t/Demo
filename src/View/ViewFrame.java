@@ -17,7 +17,7 @@ import java.text.DateFormat;
 import java.util.*;
 import java.util.List;
 
-public class ViewFrame extends JFrame {
+public class ViewFrame extends BaseFrame {
     private JPanel jPanel = null;
     private Dimension dimension = null;
     private int width = 600;
